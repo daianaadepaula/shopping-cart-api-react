@@ -5,7 +5,7 @@ export const ContHeader = styled.header`
   position: fixed;
   width: 100%;
 
-  > div {
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
