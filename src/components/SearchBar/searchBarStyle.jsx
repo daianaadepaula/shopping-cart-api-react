@@ -18,7 +18,7 @@ export const FormInput = styled.input`
   outline: none;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 `;
 
 export const Button = styled.button`
