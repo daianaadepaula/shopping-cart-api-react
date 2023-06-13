@@ -11,14 +11,15 @@ export default function Products() {
   useEffect(() =>{
     fetchProducts('iphone').then((response)=>{
       setProducts(response);
-      console.log(products);
     });
   },[]);
 
   return (    
     <Section>
       <section className="products container">
-        <ProductCard />
+        {
+          products.map((product) => <ProductCard key={product.id} data={product} />)
+        }
       </section>
     </Section>    
   );
