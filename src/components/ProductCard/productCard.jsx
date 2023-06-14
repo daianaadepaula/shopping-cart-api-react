@@ -11,7 +11,7 @@ export default function ProductCard({data}) {
     <Section>
       <section className="product-card">       
 		
-        <img src={thumbnail}
+        <img src={thumbnail.replace(/\w\.jpg/gi,'W.jpg')}
           alt="produto" 
           className="card__image" />
 
