@@ -5,8 +5,13 @@ import { FormInput, FormStyled, Button } from './searchBarStyle';
 export default function SearchBar() {
   const [searchValue, setSearchValue] = useState('');
 
+  const handleSearch = (event) =>{
+    event.preventDefault();
+    alert('teste');
+  };
+
   return (
-    <FormStyled>
+    <FormStyled onSubmit={handleSearch}>
       <FormInput
         type="search"
         value={searchValue}

@@ -13,18 +13,18 @@ export default function Products() {
   useEffect(() =>{
     fetchProducts('iphone').then((response)=>{
       setProducts(response);
-      setLoading(true);
+      setLoading(false);
     });
   },[]);
 
   return (
-    (loading ? <Loading /> : 
+    (loading && <Loading />) || (
       <Section>
         <section className="products container">
           {products.map((product) => <ProductCard key={product.id} data={product} />)}
         </section>
-      </Section>  
-    )  
+      </Section>
+    )
       
   );
 }
