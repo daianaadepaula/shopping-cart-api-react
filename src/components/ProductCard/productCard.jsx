@@ -10,13 +10,7 @@ export default function ProductCard({data}) {
   const {title, thumbnail, price} = data;
   const { cartItems, setCartItems } = useContext(AppContext);
 
-  const handleAddCart = () => {
-    const updatedCartItems = cartItems;
-
-    updatedCartItems.push(data);
-		
-    setCartItems(updatedCartItems);
-  };
+  const handleAddCart = () => setCartItems([ ...cartItems, data ]);
 
   return (
     <Section>

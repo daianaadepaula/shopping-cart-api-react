@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './cart.css';
 import CartItem from '../CartItem/cartItem';
+import AppContext from '../../context/AppContext';
 
 export default function Cart (){
+  const { cartItems } = useContext(AppContext);
+
   return (
     <section className="cart">
       <div className="cart-items">
-        <CartItem data={{thumbnail: '', title: '', price: '123'}} />
+        {
+          cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)
+        }
       </div>
 
       <div className="cart-resume">resumo do carrinho</div>
