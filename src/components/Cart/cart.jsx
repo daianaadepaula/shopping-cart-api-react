@@ -2,9 +2,13 @@ import React, { useContext } from 'react';
 import './cart.css';
 import CartItem from '../CartItem/cartItem';
 import AppContext from '../../context/AppContext';
+import formatCurrency from '../../utils/formatCurrency';
+
 
 export default function Cart (){
   const { cartItems } = useContext(AppContext);
+
+  const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
 
   return (
     <section className="cart">
@@ -12,7 +16,7 @@ export default function Cart (){
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
       </div>
 
-      <div className="cart-resume">resumo do carrinho</div>
+      <div className="cart-resume">{formatCurrency(totalPrice, 'BRL') }</div>
     </section>
   );
 }
