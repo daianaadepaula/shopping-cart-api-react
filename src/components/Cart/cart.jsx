@@ -6,12 +6,12 @@ import formatCurrency from '../../utils/formatCurrency';
 
 
 export default function Cart (){
-  const { cartItems } = useContext(AppContext);
+  const { cartItems, isCartVisible } = useContext(AppContext);
 
   const totalPrice = cartItems.reduce((acc, item) => item.price + acc, 0);
 
   return (
-    <section className="cart">
+    <section className={`cart ${isCartVisible ? 'cart--active' : ''}`}>
       <div className="cart-items">
         {cartItems.map((cartItem) => <CartItem key={cartItem.id} data={cartItem} />)}
       </div>
