@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Shopping cart with React Js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project image](./img/desktop-1.PNG)
 
-## Available Scripts
+## About the project
 
-In the project directory, you can run:
+This is a shopping cart project developed with React Js. It allows you to list products on the screen, search for products consuming the Mercado Livre API, add products and remove products from the cart.
 
-### `npm start`
+## Table of contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Overview](#overview)
+  - [Functionalities](#functionalities)
+- [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Installation](#installation)
+  - [Frontend](#frontend)
+- [Author](#author)
+- [License](#license)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Overview
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Functionalities
 
-### `npm run build`
+- Product listing
+- Product search
+- Adding products to the cart
+- Removing products from the cart
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Layout mobile
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Project mobile](./img/mobile-1.PNG)
+![Project mobile](./img/mobile-2.PNG)
+ 
+### Layout web
 
-### `npm run eject`
+![Project desktop](./img/desktop-1.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Links
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Vercel: [URL project](https://shopping-cart-api-react.vercel.app/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## My process
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Built with
 
-## Learn More
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Styled Components](https://styled-components.com/) - For styles
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Installation
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Frontend
 
-### Code Splitting
+1. Clone this repo
+```bash
+git clone https://github.com/daianaadepaula/shopping-cart-api-react.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+2. Go to the project folder
+```bash
+cd shop-cart-api-react
+```
 
-### Analyzing the Bundle Size
+3. Install dependencies
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+3. Run Frontend
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+## Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+We thank the following people who contributed to this project:
 
-### Advanced Configuration
+![Foto da Daiana de Paula no GitHub](https://github.com/daianaadepaula/daianaadepaula/blob/master/assets/daianaanimacaopiscadinhasemcirculo.png)
+**Daiana de Paula**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## License
 
-### Deployment
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/daianaadepaula/shopping-cart-api-react/blob/master/LICENSE) 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
