@@ -83,8 +83,18 @@ npm start
 
 We thank the following people who contributed to this project:
 
-![Foto da Daiana de Paula no GitHub](https://github.com/daianaadepaula/daianaadepaula/blob/master/assets/daianaanimacaopiscadinhasemcirculo.png)
-**Daiana de Paula**
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/daianaadepaula/daianaadepaula/blob/master/assets/daianaanimacaopiscadinhasemcirculo.png" width="100px;" alt="Foto da Daiana de Paula no GitHub"/><br>
+        <sub>
+          <b>Daiana de Paula</b>
+        </sub>
+      </a>
+    </td>
+    
+</table>
 
 ## License
 
